@@ -26,6 +26,7 @@ Session-by-session log. Newest first. Add an entry at the end of every session b
 - Quote form is UI-only, not wired to anything
 - Omega integration entirely blocked on Monday's meeting outcome
 - GitHub PAT used to push this session was scoped to this repo only — should be rotated/regenerated since it was pasted into a chat session
+- Billy wants to explore migrating the TAITCO field management app (separate project, hosted on Railway, project `scintillating-courtesy`) to the taitcoglass.com domain — likely as a subdomain (e.g. `app.taitcoglass.com`), needs a new DNS record in GoDaddy pointing at Railway. Planned for a MacBook session, not urgent.
 
 ---
 
