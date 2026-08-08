@@ -95,12 +95,9 @@ h3 { font-size: 1.15rem; }
   padding-bottom: 14px;
   gap: 16px;
 }
-.brand {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-}
-.brand .script { color: var(--orange); font-size: 1.1em; }
+.brand { display: flex; align-items: center; }
+.brand-mark { height: 44px; width: auto; display: block; }
+@media (min-width: 900px) { .brand-mark { height: 52px; } }
 
 .header-phone {
   font-family: var(--font-display);
