@@ -1,6 +1,8 @@
-# TAITCO Glass Site — Project Context
+# TAITCO Glass Site — Deep Reference
 
-Last updated: this session (website build, DNS, email setup, Omega prep)
+This is the full technical spec. For quick orientation, read `CLAUDE.md` at the repo root first — it covers 90% of what a new session needs. Come here for DNS records, full page breakdowns, and anything CLAUDE.md points you to.
+
+Last updated: Session 1 (site build, DNS, email setup)
 Owner: Billy Tait (TAITCO Auto Glass, Temecula, CA)
 
 ---
