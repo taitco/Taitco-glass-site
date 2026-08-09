@@ -1,5 +1,18 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+const navToggle = document.getElementById('navToggle');
+const mobileNav = document.getElementById('mobileNav');
+if (navToggle && mobileNav) {
+  navToggle.addEventListener('click', function () {
+    mobileNav.classList.toggle('open');
+  });
+  mobileNav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      mobileNav.classList.remove('open');
+    });
+  });
+}
+
 const quoteForm = document.getElementById('quote-form');
 if (quoteForm) {
   quoteForm.addEventListener('submit', function (e) {

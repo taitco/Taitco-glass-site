@@ -127,6 +127,47 @@ h3 { font-size: 1.15rem; }
   .main-nav a:hover { color: var(--orange); }
 }
 
+/* Mobile menu toggle */
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.nav-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: var(--cream);
+  border-radius: 1px;
+}
+@media (min-width: 900px) { .nav-toggle { display: none; } }
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background: var(--ink);
+  border-top: 2px solid var(--orange);
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(246,242,232,0.1);
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: var(--cream);
+}
+.mobile-nav a:active { background: rgba(225,91,34,0.15); }
+@media (min-width: 900px) { .mobile-nav { display: none !important; } }
+
 /* ===========================================================
    FLAG DIVIDER — signature element
    =========================================================== */
