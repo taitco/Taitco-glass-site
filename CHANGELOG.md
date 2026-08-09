@@ -34,6 +34,36 @@ Session-by-session log. Newest first. Add an entry at the end of every session b
 
 ---
 
+## Session 3 — Visual redesign: "Sign Shop / Grey" + day/night mode
+**Why:** Original design read cartoony — hard offset drop shadows, 3px black borders, chunky full-width checkered band, Archivo Black set very large. That combination reads "sticker," not "sign painter."
+
+**What changed:**
+- Reviewed four directions side by side (mockups in outputs, not in repo). Billy chose the "Sign Shop" direction with **grey** accent instead of gold.
+- Rewrote `css/style.css` from scratch as a themed design system
+- Removed all hard offset box-shadows and heavy 3px borders; buttons are now flat
+- Checkered-flag divider replaced by a **pinstripe**: black bar with a grey hairline. Same sign-painter reference, none of the racing-flag cartoon.
+- Cards now use a 4px solid top rule on a light panel (painted-panel feel) instead of outlined boxes
+- Gold dropped from web use entirely — orange is now the only warm color on the page. Grey carries the eyebrows, card numerals, and pinstripe.
+- Body copy set lighter (Oswald 300) with more line-height; Archivo Black reserved for headings at smaller sizes
+- Stripped all hardcoded hex colors from inline styles across all six pages so theming works everywhere
+
+**Day/Night mode (new):**
+- Added a Day/Night switch in the header on all pages
+- **Day mode inverts the hero and sections to white with near-black text** — dark backgrounds are harder to read outdoors because the screen reflects surroundings. Day mode is built for reading on a truck lot in sunlight.
+- Choice persists in localStorage; auto-defaults to Day for visitors whose device is set to light mode
+- **The header bar stays dark in both modes on purpose** — the logo is cream fill with black outlines, and "TEMECULA, CALIF." has no outline at all, so it disappears on a light field. Same reason the logo sits on a painted panel on a truck door. Changing this would require a second dark-fill logo variant.
+
+**Open:**
+- Still no real photography — a gallery would strengthen the Day mode especially
+- Reviews section still placeholder
+- Partner/vendor cross-promo section still pending Billy's vendor list + referral codes
+
+---
+
+
+
+---
+
 ## Session 2 — About page, service detail pages, JET Auto Glass benchmark
 **What shipped:**
 - Reviewed JET Auto Glass (jetautoglass.com) as a structural model — direct Temecula competitor. Borrowed the instinct (founder story, specific guarantee language, FAQ per service) without copying content.
