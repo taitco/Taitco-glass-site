@@ -31,3 +31,22 @@ Session-by-session log. Newest first. Add an entry at the end of every session b
 ---
 
 <!-- Next session: add a new entry above this line, dated, same format -->
+
+---
+
+## Session 2 — About page, service detail pages, JET Auto Glass benchmark
+**What shipped:**
+- Reviewed JET Auto Glass (jetautoglass.com) as a structural model — direct Temecula competitor. Borrowed the instinct (founder story, specific guarantee language, FAQ per service) without copying content.
+- Built `about.html` — real founder story: three generations in the car business (grandfather's Detroit dealership since 1953), Billy's path from dealer lot to AGU-certified auto glass service
+- Built `services/rock-chip-repair.html`, `services/windshield-replacement.html`, `services/adas-calibration.html` — each with hero, "why it matters" copy, 3-step process cards, and a dedicated FAQ section. These were previously dead links from the homepage service cards.
+- Sharpened trust-bar guarantee copy from generic "Lifetime Warranty" to more specific "Repair Guarantee — Fails? We make it right"
+- Added About link to nav on all pages
+
+**Still not done:**
+- Gallery/photo section (JET has one, TAITCO doesn't yet — needs real job photos)
+- Partner/cross-promotion section (JET does this with other local small businesses)
+- Homepage reviews section is still placeholder content
+
+---
+
+<!-- Next session: add a new entry above this line, dated, same format -->
