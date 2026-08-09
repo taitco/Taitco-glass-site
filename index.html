@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="night">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TAITCO Auto Glass | Windshield Repair &amp; Replacement — Temecula, CA</title>
 <meta name="description" content="TAITCO Auto Glass — rock chip repair, windshield replacement, and ADAS calibration for dealers and drivers from Escondido to Colton. Mobile service. Call 951.706.4040.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat+Brush&family=Oswald:wght@400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat+Brush&family=Oswald:wght@200;300;400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="images/taitco-logo.png">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,11 +23,17 @@
       <a href="#reviews">Reviews</a>
       <a href="#quote">Get a Quote</a>
     </nav>
-    <a href="tel:9517064040" class="header-phone">
-      <small>Call Now</small>
-      951.706.4040
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="header-right">
+      <div class="theme-switch" role="group" aria-label="Display mode">
+        <button id="btnDay" type="button" onclick="setTheme('day')">Day</button>
+        <button id="btnNight" type="button" class="on" onclick="setTheme('night')">Night</button>
+      </div>
+      <a href="tel:9517064040" class="header-phone">
+        <small>Call</small>
+        951.706.4040
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
   </div>
   <nav class="mobile-nav" id="mobileNav">
     <a href="#services">Services</a>
@@ -39,7 +45,7 @@
   </nav>
 </header>
 
-<div class="flag-divider"></div>
+<div class="pin"></div>
 
 <!-- HERO -->
 <section class="hero">
@@ -50,7 +56,7 @@
       <p class="hero-sub">Rock chip repair, windshield replacement, and ADAS calibration — done right by a real shop, not a call center. Mobile service to your driveway, your dealership, or your fleet lot.</p>
       <div class="hero-actions">
         <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
-        <a href="tel:9517064040" class="btn btn-ghost" style="border-color:#F6F2E8;color:#F6F2E8;">Call 951.706.4040</a>
+        <a href="tel:9517064040" class="btn btn-ghost">Call 951.706.4040</a>
       </div>
       <p class="hero-service-area">Serving <strong>Escondido to Colton</strong> &mdash; Southern California</p>
     </div>
@@ -112,14 +118,14 @@
   </div>
 </section>
 
-<div class="flag-divider"></div>
+<div class="pin"></div>
 
 <!-- DEALER / RETAIL SPLIT -->
 <section id="dealer-retail" class="split">
   <div class="wrap">
-    <div class="section-head" style="color:#F6F2E8;">
+    <div class="section-head">
       <span class="section-eyebrow">Two Ways We Work</span>
-      <h2 style="color:#F6F2E8;">Built for Dealers. Ready for Drivers.</h2>
+      <h2>Built for Dealers. Ready for Drivers.</h2>
     </div>
   </div>
   <div class="split-grid">
@@ -172,7 +178,7 @@
   </div>
 </section>
 
-<div class="flag-divider"></div>
+<div class="pin"></div>
 
 <!-- QUOTE FORM -->
 <section id="quote" class="quote-section">
@@ -254,7 +260,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="brand" style="margin-bottom:14px;"><img src="images/taitco-logo.png" alt="TAITCO Auto Glass Service" class="brand-mark" style="height:64px;"></div>
+        <div class="brand" style="margin-bottom:14px;"><img src="images/taitco-logo.png" alt="TAITCO Auto Glass Service" class="brand-mark" style="height:60px"></div>
         <p>Full glass service for dealers and drivers &mdash; Temecula, Calif. Mobile service from Escondido to Colton.</p>
       </div>
       <div>

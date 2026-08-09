@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="night">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
 <meta name="description" content="Mobile windshield replacement in Temecula, CA. OEM and OEE glass, insurance claims handled, lifetime warranty on workmanship. We come to you.">
 <link rel="icon" type="image/png" href="../images/taitco-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat+Brush&family=Oswald:wght@400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat+Brush&family=Oswald:wght@200;300;400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -22,11 +22,17 @@
       <a href="../index.html#service-area">Service Area</a>
       <a href="../index.html#quote">Get a Quote</a>
     </nav>
-    <a href="tel:9517064040" class="header-phone">
-      <small>Call Now</small>
-      951.706.4040
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="header-right">
+      <div class="theme-switch" role="group" aria-label="Display mode">
+        <button id="btnDay" type="button" onclick="setTheme('day')">Day</button>
+        <button id="btnNight" type="button" class="on" onclick="setTheme('night')">Night</button>
+      </div>
+      <a href="tel:9517064040" class="header-phone">
+        <small>Call</small>
+        951.706.4040
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
   </div>
   <nav class="mobile-nav" id="mobileNav">
     <a href="../index.html#services">Services</a>
@@ -37,35 +43,35 @@
   </nav>
 </header>
 
-<div class="flag-divider"></div>
+<div class="pin"></div>
 
 <section class="hero" style="padding-bottom:56px;">
-  <div class="wrap" style="grid-template-columns:1fr;">
+  <div class="wrap" style="grid-template-columns:1fr">
     <div>
       <span class="hero-eyebrow">Mobile Service</span>
       <h1>Windshield <span class="script">Replacement</span></h1>
-      <p class="hero-sub" style="max-width:60ch;">OEM and OEE glass, matched to your vehicle, installed to safety standard — backed by a lifetime workmanship warranty.</p>
+      <p class="hero-sub">OEM and OEE glass, matched to your vehicle, installed to safety standard — backed by a lifetime workmanship warranty.</p>
       <div class="hero-actions">
         <a href="../index.html#quote" class="btn btn-primary">Get a Free Quote</a>
-        <a href="tel:9517064040" class="btn btn-ghost" style="border-color:#F6F2E8;color:#F6F2E8;">Call 951.706.4040</a>
+        <a href="tel:9517064040" class="btn btn-ghost">Call 951.706.4040</a>
       </div>
     </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap" style="max-width:760px;">
-    <h2 style="margin-bottom:18px;">When Repair Isn't Enough</h2>
-    <p style="font-size:1.05rem; line-height:1.7; margin-bottom:18px;">
+  <div class="wrap longform">
+    <h2 style="margin-bottom:16px;">When Repair Isn't Enough</h2>
+    <p>
       Some damage goes past what a repair can fix — long cracks, damage at the edge of the glass, or chips directly in your line of sight. Driving on a compromised windshield isn't just inconvenient, it's a real safety risk: your windshield is part of your vehicle's structural integrity, and it matters in a rollover or when airbags deploy.
     </p>
-    <p style="font-size:1.05rem; line-height:1.7;">
+    <p>
       We install OEM and high-quality OEE glass to manufacturer spec, right where your vehicle is parked — home, work, or your dealership lot.
     </p>
   </div>
 </section>
 
-<div class="flag-divider"></div>
+<div class="pin"></div>
 
 <section>
   <div class="wrap">
@@ -93,28 +99,28 @@
   </div>
 </section>
 
-<section style="background:#ECE7D9;">
-  <div class="wrap" style="max-width:760px;">
+<section class="alt-bg">
+  <div class="wrap longform">
     <div class="section-head">
       <span class="section-eyebrow">Common Questions</span>
       <h2>Windshield Replacement FAQ</h2>
     </div>
-    <div style="display:grid; gap:22px;">
+    <div class="faq-list">
       <div>
-        <h3 style="margin-bottom:6px;">Will insurance cover replacement?</h3>
-        <p style="color:var(--gray);">Most comprehensive policies cover windshield replacement, often with a deductible. We work directly with most major insurance providers to make the claim process straightforward.</p>
+        <h3>Will insurance cover replacement?</h3>
+        <p>Most comprehensive policies cover windshield replacement, often with a deductible. We work directly with most major insurance providers to make the claim process straightforward.</p>
       </div>
       <div>
-        <h3 style="margin-bottom:6px;">Do I need ADAS calibration after replacement?</h3>
-        <p style="color:var(--gray);">If your vehicle has a windshield-mounted camera for lane-keep assist, automatic braking, or similar safety features, yes — it needs to be recalibrated after any windshield replacement. We include this as part of the job.</p>
+        <h3>Do I need ADAS calibration after replacement?</h3>
+        <p>If your vehicle has a windshield-mounted camera for lane-keep assist, automatic braking, or similar safety features, yes — it needs to be recalibrated after any windshield replacement. We include this as part of the job.</p>
       </div>
       <div>
-        <h3 style="margin-bottom:6px;">How long does replacement take?</h3>
-        <p style="color:var(--gray);">Most replacements, including calibration, are completed same-day, on-site.</p>
+        <h3>How long does replacement take?</h3>
+        <p>Most replacements, including calibration, are completed same-day, on-site.</p>
       </div>
       <div>
-        <h3 style="margin-bottom:6px;">What's your warranty?</h3>
-        <p style="color:var(--gray);">Lifetime warranty on workmanship for as long as you own the vehicle.</p>
+        <h3>What's your warranty?</h3>
+        <p>Lifetime warranty on workmanship for as long as you own the vehicle.</p>
       </div>
     </div>
   </div>
@@ -131,7 +137,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="brand" style="margin-bottom:14px;"><img src="../images/taitco-logo.png" alt="TAITCO Auto Glass Service" class="brand-mark" style="height:64px;"></div>
+        <div class="brand" style="margin-bottom:14px;"><img src="../images/taitco-logo.png" alt="TAITCO Auto Glass Service" class="brand-mark" style="height:60px"></div>
         <p>Full glass service for dealers and drivers &mdash; Temecula, Calif. Mobile service from Escondido to Colton.</p>
       </div>
       <div>

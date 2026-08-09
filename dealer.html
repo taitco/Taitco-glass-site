@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="night">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dealer Glass Program | TAITCO Auto Glass — Temecula, CA</title>
 <meta name="description" content="TAITCO's dealer glass program — on-lot mobile glass repair and replacement for dealerships from Escondido to Colton. Fast turnaround, fleet scheduling, direct billing.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat+Brush&family=Oswald:wght@400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat+Brush&family=Oswald:wght@200;300;400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="images/taitco-logo.png">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,11 +22,17 @@
       <a href="index.html#service-area">Service Area</a>
       <a href="index.html#quote">Get a Quote</a>
     </nav>
-    <a href="tel:9517064040" class="header-phone">
-      <small>Call Now</small>
-      951.706.4040
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="header-right">
+      <div class="theme-switch" role="group" aria-label="Display mode">
+        <button id="btnDay" type="button" onclick="setTheme('day')">Day</button>
+        <button id="btnNight" type="button" class="on" onclick="setTheme('night')">Night</button>
+      </div>
+      <a href="tel:9517064040" class="header-phone">
+        <small>Call</small>
+        951.706.4040
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
   </div>
   <nav class="mobile-nav" id="mobileNav">
     <a href="index.html#services">Services</a>
@@ -37,18 +43,18 @@
   </nav>
 </header>
 
-<div class="flag-divider"></div>
+<div class="pin"></div>
 
 <!-- DEALER HERO -->
 <section class="hero" style="padding-bottom:56px;">
-  <div class="wrap" style="grid-template-columns:1fr;">
+  <div class="wrap" style="grid-template-columns:1fr">
     <div>
       <span class="hero-eyebrow">For Dealerships</span>
       <h1>Dealer <span class="script">Glass</span> Program</h1>
-      <p class="hero-sub" style="max-width:60ch;">TAITCO keeps dealership lots moving. On-lot mobile glass repair and replacement for new and used inventory, fast turnaround, and a direct line to your account rep &mdash; not a call center.</p>
+      <p class="hero-sub">TAITCO keeps dealership lots moving. On-lot mobile glass repair and replacement for new and used inventory, fast turnaround, and a direct line to your account rep &mdash; not a call center.</p>
       <div class="hero-actions">
         <a href="#dealer-request" class="btn btn-primary">Request Dealer Info</a>
-        <a href="#dealer-login" class="btn btn-ghost" style="border-color:#F6F2E8;color:#F6F2E8;">Dealer Login</a>
+        <a href="#dealer-login" class="btn btn-ghost">Dealer Login</a>
       </div>
     </div>
   </div>
@@ -82,7 +88,7 @@
   </div>
 </section>
 
-<div class="flag-divider"></div>
+<div class="pin"></div>
 
 <!-- REQUEST INFO FORM (public) -->
 <section id="dealer-request" class="quote-section">
@@ -149,7 +155,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="brand" style="margin-bottom:14px;"><img src="images/taitco-logo.png" alt="TAITCO Auto Glass Service" class="brand-mark" style="height:64px;"></div>
+        <div class="brand" style="margin-bottom:14px;"><img src="images/taitco-logo.png" alt="TAITCO Auto Glass Service" class="brand-mark" style="height:60px"></div>
         <p>Full glass service for dealers and drivers &mdash; Temecula, Calif. Mobile service from Escondido to Colton.</p>
       </div>
       <div>

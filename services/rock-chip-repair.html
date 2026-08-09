@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="night">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
 <meta name="description" content="Mobile rock chip repair in Temecula, CA. Most repairs done in 30 minutes, often at no cost through insurance. TAITCO comes to you.">
 <link rel="icon" type="image/png" href="../images/taitco-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat+Brush&family=Oswald:wght@400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat+Brush&family=Oswald:wght@200;300;400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -22,11 +22,17 @@
       <a href="../index.html#service-area">Service Area</a>
       <a href="../index.html#quote">Get a Quote</a>
     </nav>
-    <a href="tel:9517064040" class="header-phone">
-      <small>Call Now</small>
-      951.706.4040
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="header-right">
+      <div class="theme-switch" role="group" aria-label="Display mode">
+        <button id="btnDay" type="button" onclick="setTheme('day')">Day</button>
+        <button id="btnNight" type="button" class="on" onclick="setTheme('night')">Night</button>
+      </div>
+      <a href="tel:9517064040" class="header-phone">
+        <small>Call</small>
+        951.706.4040
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
   </div>
   <nav class="mobile-nav" id="mobileNav">
     <a href="../index.html#services">Services</a>
@@ -37,35 +43,35 @@
   </nav>
 </header>
 
-<div class="flag-divider"></div>
+<div class="pin"></div>
 
 <section class="hero" style="padding-bottom:56px;">
-  <div class="wrap" style="grid-template-columns:1fr;">
+  <div class="wrap" style="grid-template-columns:1fr">
     <div>
       <span class="hero-eyebrow">Mobile Service</span>
       <h1>Rock Chip <span class="script">Repair</span></h1>
-      <p class="hero-sub" style="max-width:60ch;">A chip caught early saves the whole windshield. Fast, mobile, and often covered at no cost through insurance.</p>
+      <p class="hero-sub">A chip caught early saves the whole windshield. Fast, mobile, and often covered at no cost through insurance.</p>
       <div class="hero-actions">
         <a href="../index.html#quote" class="btn btn-primary">Get a Free Quote</a>
-        <a href="tel:9517064040" class="btn btn-ghost" style="border-color:#F6F2E8;color:#F6F2E8;">Call 951.706.4040</a>
+        <a href="tel:9517064040" class="btn btn-ghost">Call 951.706.4040</a>
       </div>
     </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap" style="max-width:760px;">
-    <h2 style="margin-bottom:18px;">Why Repair Instead of Replace?</h2>
-    <p style="font-size:1.05rem; line-height:1.7; margin-bottom:18px;">
+  <div class="wrap longform">
+    <h2 style="margin-bottom:16px;">Why Repair Instead of Replace?</h2>
+    <p>
       A rock chip is small damage — but it doesn't stay small. Left alone, temperature swings, road vibration, and pressure from the frame can turn a dime-sized chip into a crack that runs the width of your windshield. Caught early, most chips can be repaired in about 30 minutes, right where your vehicle is parked.
     </p>
-    <p style="font-size:1.05rem; line-height:1.7;">
+    <p>
       Repair preserves your original factory seal and windshield — no need for full replacement, and no need to recalibrate ADAS cameras and sensors the way a full replacement requires.
     </p>
   </div>
 </section>
 
-<div class="flag-divider"></div>
+<div class="pin"></div>
 
 <section>
   <div class="wrap">
@@ -94,28 +100,28 @@
 </section>
 
 <!-- FAQ -->
-<section style="background:#ECE7D9;">
-  <div class="wrap" style="max-width:760px;">
+<section class="alt-bg">
+  <div class="wrap longform">
     <div class="section-head">
       <span class="section-eyebrow">Common Questions</span>
       <h2>Rock Chip Repair FAQ</h2>
     </div>
-    <div style="display:grid; gap:22px;">
+    <div class="faq-list">
       <div>
-        <h3 style="margin-bottom:6px;">Will insurance cover it?</h3>
-        <p style="color:var(--gray);">Most comprehensive auto insurance policies cover chip repair with little to no deductible. We can help you check your coverage before booking.</p>
+        <h3>Will insurance cover it?</h3>
+        <p>Most comprehensive auto insurance policies cover chip repair with little to no deductible. We can help you check your coverage before booking.</p>
       </div>
       <div>
-        <h3 style="margin-bottom:6px;">How long does a repair take?</h3>
-        <p style="color:var(--gray);">Most repairs are done in about 30 minutes, on-site, while you wait.</p>
+        <h3>How long does a repair take?</h3>
+        <p>Most repairs are done in about 30 minutes, on-site, while you wait.</p>
       </div>
       <div>
-        <h3 style="margin-bottom:6px;">Can any chip be repaired?</h3>
-        <p style="color:var(--gray);">Most chips smaller than a quarter, away from the edge of the glass, are repairable. If damage has already spread into a long crack, replacement is usually the safer option — we'll tell you straight if that's the case.</p>
+        <h3>Can any chip be repaired?</h3>
+        <p>Most chips smaller than a quarter, away from the edge of the glass, are repairable. If damage has already spread into a long crack, replacement is usually the safer option — we'll tell you straight if that's the case.</p>
       </div>
       <div>
-        <h3 style="margin-bottom:6px;">What's your guarantee?</h3>
-        <p style="color:var(--gray);">If a repaired chip fails and spreads, we stand behind the work — talk to us about your options, including credit toward a full replacement.</p>
+        <h3>What's your guarantee?</h3>
+        <p>If a repaired chip fails and spreads, we stand behind the work — talk to us about your options, including credit toward a full replacement.</p>
       </div>
     </div>
   </div>
@@ -132,7 +138,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="brand" style="margin-bottom:14px;"><img src="../images/taitco-logo.png" alt="TAITCO Auto Glass Service" class="brand-mark" style="height:64px;"></div>
+        <div class="brand" style="margin-bottom:14px;"><img src="../images/taitco-logo.png" alt="TAITCO Auto Glass Service" class="brand-mark" style="height:60px"></div>
         <p>Full glass service for dealers and drivers &mdash; Temecula, Calif. Mobile service from Escondido to Colton.</p>
       </div>
       <div>
