@@ -318,6 +318,15 @@ input,select,textarea{
   background:var(--fieldBg);color:var(--ink);
 }
 input:focus,select:focus,textarea:focus{outline:2px solid var(--orange);outline-offset:1px}
+input[type="file"]{
+  padding:10px 14px;font-size:.92rem;font-weight:300;
+  border:1px dashed var(--fieldBorder);cursor:pointer;
+}
+input[type="file"]::file-selector-button{
+  font-family:var(--font-body);font-weight:500;font-size:.75rem;text-transform:uppercase;
+  letter-spacing:1.4px;background:var(--ink);color:var(--cream);border:none;
+  padding:9px 16px;margin-right:14px;cursor:pointer;border-radius:0;
+}
 .quote-note{
   margin-top:16px;font-size:.85rem;font-weight:300;color:var(--bodyText);
   border-left:2px solid var(--grey);padding-left:12px;

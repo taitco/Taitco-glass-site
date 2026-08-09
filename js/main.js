@@ -40,7 +40,7 @@ var quoteForm = document.getElementById('quote-form');
 if (quoteForm) {
   quoteForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    alert('Thanks — this form is a placeholder. Once the Omega EDI quoter is connected, this will submit a live quote request.');
+    alert('Thanks — this form is a placeholder, including the photo field. Once the Omega EDI quoter is connected, this will submit a live quote request with your photo attached.');
   });
 }
 
