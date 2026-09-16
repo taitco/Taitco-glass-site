@@ -34,6 +34,19 @@ Session-by-session log. Newest first. Add an entry at the end of every session b
 
 ---
 
+## Session 4 — ADAS page rewrite + equipment/report section
+**What changed:**
+- Rebuilt `services/adas-calibration.html` as a full explainer page, using RevvADAS's public ADAS explainer guide (revvhq.com) as a factual reference only — all copy rewritten fresh in TAITCO's own voice, no content reused verbatim
+- Added: stats bar (90%+ of new vehicles, 1° misalignment impact, no-warning-light fact), "What ADAS Actually Is" section, sensor-location breakdown (windshield/front bumper/rear bumper/wheels/steering column), "What Triggers a Calibration" list, precision explainer, and an expanded 8-question FAQ
+- Added an equipment section naming Autel MA800 (calibration frame) and Autel MaxiSys MS909S2 (diagnostic/calibration tablet), plus messaging that every calibration includes a detailed measurement report for the customer, their insurer, or a dealership's records
+- Kept the existing Static/Dynamic Calibration cards and updated the "Verified & Documented" card to explicitly reference the report
+
+---
+
+
+
+---
+
 ## Session 3 — Visual redesign: "Sign Shop / Grey" + day/night mode
 **Why:** Original design read cartoony — hard offset drop shadows, 3px black borders, chunky full-width checkered band, Archivo Black set very large. That combination reads "sticker," not "sign painter."
 
